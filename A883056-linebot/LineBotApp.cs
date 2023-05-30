@@ -47,7 +47,7 @@ public class LineBotApp : WebhookApplication
                         TeachMi(text);
                         result = new List<ISendMessage>
                         {
-                            new TextMessage("嗨")
+                            new TextMessage("好嗚")
                         };
                     }
                 }
