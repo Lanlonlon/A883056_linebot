@@ -17,8 +17,7 @@ namespace A883056_linebot.Controllers
         private readonly HttpContext _httpContext;
         private readonly LineBotConfig _lineBotConfig;
 
-        public LineBotController(IServiceProvider serviceProvider,
-            LineBotConfig lineBotConfig)
+        public LineBotController(IServiceProvider serviceProvider)
         {
             _httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
             _httpContext = _httpContextAccessor.HttpContext;
