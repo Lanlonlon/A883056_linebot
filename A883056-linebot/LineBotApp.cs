@@ -45,6 +45,10 @@ public class LineBotApp : WebhookApplication
                     {
                         //將資料寫入記憶體池
                         TeachMi(text);
+                        result = new List<ISendMessage>
+                        {
+                            new TextMessage("嗨")
+                        };
                     }
                 }
  
